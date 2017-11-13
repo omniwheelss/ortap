@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Seenu\StudioProjects\VTS\app\libs\httpclient-4.2.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6a91a27c5c07e9da44eeddbc4206e349735b26f4">
+        <dex dex="C:\Users\Seenu\StudioProjects\VTS\app\build\intermediates\pre-dexed\debug\httpclient-4.2.3_8ade36f14487610768ed883fb541bd655ec62b1a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Seenu\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="31fbbff1ddbf98f3aa7377c94d33b0447c646b6e">
+        <dex dex="C:\Users\Seenu\StudioProjects\VTS\app\build\intermediates\pre-dexed\debug\httpcore-4.3.2_9aa7e3690ee01f38d4166226cc6f586d11f681f0.jar" />
+    </item>
+
+</items>

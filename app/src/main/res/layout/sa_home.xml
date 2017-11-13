@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlHome"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llHeader"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/header"
+            android:src="@drawable/sa_header"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true" />
+        
+        <ImageView
+            android:id="@+id/imgLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/location"
+            android:src="@drawable/sa_location"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+    
+    
+    
+
+
+
+    <LinearLayout
+        android:id="@+id/llTabContent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3"
+        
+         >
+
+        <TextView
+            android:id="@+id/tvMove"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/sa_moving" />
+
+        <TextView
+            android:id="@+id/tvStop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/sa_stopped" />
+
+        <TextView
+            android:id="@+id/tvVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/sa_verify" />
+
+    </LinearLayout>
+
+            <ListView
+                android:id="@+id/lstContent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="#b5b5b5"
+                android:dividerHeight="3dp" 
+                android:layout_below="@id/llHeader"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                 >
+            </ListView>
+            
+            
+            
+            
+    
+</RelativeLayout>

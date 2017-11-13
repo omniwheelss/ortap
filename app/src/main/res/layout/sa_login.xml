@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlHome"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llHeader"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/header"
+            android:src="@drawable/sa_header"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true" />
+        
+        <ImageView
+            android:id="@+id/imgLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/location"
+            android:src="@drawable/sa_login"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+    
+
+    <ScrollView  
+            android:id="@+id/svLoginContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:layout_below="@id/llHeader"
+            > 
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center"
+         >
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/username">
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/ivSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sa_signin"
+            android:contentDescription="@string/signin"
+             />
+        
+    </LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>
